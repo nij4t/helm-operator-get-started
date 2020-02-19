@@ -13,8 +13,6 @@ spec:
     git: git@github.com:fluxcd/helm-operator-get-started
     path: charts/podinfo
     ref: master
-  values:
-    image:
-      repository: stefanprodan/podinfo
-      tag: 1.1.1
-    replicaCount: 3
+  valuesFrom:
+  - chartFileRef:
+      path: values/secret.yaml # mandatory

@@ -14,3 +14,5 @@
 .glide/
 .gitsecret/keys/random_seed
 !*.secret
+
+releases/**/*.yaml
